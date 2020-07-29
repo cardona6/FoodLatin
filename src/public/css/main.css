@@ -2,3 +2,36 @@ body { background: #159957;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #155799, #159957); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+.main img {
+    max-width: 80%;
+}
+
+.info {
+    background: #333;
+    color:#fff;
+    text-align: center;
+}
+.info_img{
+    border-radius: 50%;
+    border: 7px solid #444;
+   
+}
+.info_txt{
+    text-align: justify;
+    padding: 15px;
+}
+
+.mapa{
+    background: #f0ede5;
+    padding: 15px;
+    text-align: center;
+}
+
+.mapa h3 {
+    font-size: 30px;
+}
+
+.mapa p{
+    text-align: justify;
+}
