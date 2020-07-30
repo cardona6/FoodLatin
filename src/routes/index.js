@@ -7,7 +7,11 @@ router.get('/', (req,res) =>{
 });
 
 router.get('/about', (req,res) =>{
-    res.render('about',{title: "hervin garcia"} );
+    res.render('about' );
+});
+
+router.get('/fotos', (req,res) =>{
+    res.render('fotos' );
 });
 
 router.get('/contact', (req,res) =>{
