@@ -3,6 +3,8 @@ background: -webkit-linear-gradient(to right, #155799, #159957);  /* Chrome 10-2
 background: linear-gradient(to right, #155799, #159957); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+/* ====mapa section ====*/
+
 .main img {
     max-width: 80%;
 }
@@ -37,6 +39,74 @@ background: linear-gradient(to right, #155799, #159957); /* W3C, IE 10+/ Edge, F
 }
 
 
+/* ======= home section ====*/
+
+#home {
+    background: black;
+    margin-top: 30px;
+    color: blanchedalmond;
+}
+
+.text {
+    font-size: 28px;
+}
+
+.home-images {
+    position: relative;
+}
+
+.home-img{
+    position: absolute;
+    width: 150px;
+    transition: all 2s ease;
+    opacity: 0.9;
+}
+
+.img-1{
+    left: 0%;
+    top: 0%;
+}
+
+.img-2{
+    left: 20%;
+    top: 20%;
+    z-index: 10;
+}
+
+.img-3{
+    left: 40%;
+    top: 45%;
+    z-index: 20;
+}
+.img-4{
+    left: 40%;
+    top: 0%;
+  
+}
+.img-5{
+    left: 0%;
+    top: 45%;
+}
+
+.home-img:hover{
+    outline: 10px solid #dbc;
+    outline-offset: 32px;
+    transform: scale(1.3) rotate(20deg);
+    z-index: 30;
+    opacity: 1;
+}
+
+.home-images:hover,
+.home-img:not(:hover){
+    opacity: 0.5;
+}
+
+
+
+
+/* ==== Footer section ===*/
+
+ 
 footer {
 width: 100%;
 background: #202020;
@@ -113,6 +183,7 @@ color: #fff;
     max-width: 150px;
 }
 
+
 .container-footer{
     width: 100%;
     background: #101010;
@@ -143,7 +214,8 @@ color: #fff;
 }
 
 
-/* baner */
+
+/* About section*/
 
 .about-section{
     background: url('/img/recetas.jpg') no-repeat left;
