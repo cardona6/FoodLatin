@@ -39,6 +39,95 @@ background: linear-gradient(to right, #155799, #159957); /* W3C, IE 10+/ Edge, F
 }
 
 
+/* ======= video section ====*/
+
+.most-liked{
+    position: relative;
+    margin-top: 25px;
+}
+
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.bg-video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.coffee-card{
+    position: relative;
+    box-shadow: 5px 15px 50px chocolate;
+    max-width: 420px;
+    transition: all .8s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card-header .title-text{
+color: black;
+}
+
+.rotate{
+    perspective: 100rem;
+}
+
+.back{
+    position: absolute;
+    top: -100%;
+    background: blanchedalmond;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+    transform: rotateY(180deg);
+    transition: top .8s opacity .4s;
+}
+
+.text-color{
+    color:white ;
+}
+
+.back-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rotate:hover .coffee-card{
+transform: 
+rotatey(180deg);
+}
+
+.rotate:hover .back{
+    opacity: 1;
+    top: 0;
+    user-select: auto;
+    pointer-events: auto;
+}
+
+.back-content .btn{
+    color: green;
+}
+
+.hvr-right{
+    display: inline-block;
+    vertical-align: middle;
+    transition-duration: 0.5;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 5px black;
+    position: relative;
+    transition-property: color;
+}
+
 /* ======= home section ====*/
 
 #home {
